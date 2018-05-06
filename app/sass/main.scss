@@ -1,0 +1,90 @@
+@import "variables";
+
+.red-link {
+  color: $red !important;
+  margin: 0 7px;
+  font-size: 14px;
+}
+
+.rounded-button {
+  border: 1px solid $light-gray;
+  color: $dark-gray !important;
+  text-decoration: none !important;
+  padding: 5px 15px;
+  border-radius: 17px;
+  font-size: 14px;
+
+  &:after {
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    margin-left: 10px;
+    color: $middle-gray;
+  }
+}
+
+
+
+.circle-button {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  box-shadow: 0 0 0 3px $white,
+              0 0 0 4px $red,
+              0 0 0 7px $white,
+              0 0 0 8px $light-red;
+  background-color: $red;
+  color: $white;
+  text-align: center;
+  font-size: 17px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+
+
+.accordion {
+  border: 1px solid $light-gray;
+  border-radius: 7px;
+  overflow: hidden;
+  display: block;
+  padding: 15px;
+  text-decoration: none !important;
+  color: $dark-text !important;
+  background-color: $accordion-active;
+  margin-bottom: 25px;
+
+  &.collapsed {
+    background-color: $white;
+  }
+
+  & .accordion__head {
+    display: block;
+    padding: 5px 0;
+
+    &--date {
+      background-color: #edeeee;
+      font-style: normal;
+      padding: 5px;
+      border-radius: 3px;
+      font-size: 16px;
+    }
+
+    &--title {
+      display: block;
+      margin-top: 15px;
+      font-size: 18px;
+    }
+  }
+
+  & .accordion__body {
+    border: none !important;
+    padding: 0 !important;
+    cursor: default;
+    background-color: transparent;
+    color: $accordion-gray !important;
+    font-size: 16px;
+  }
+}
+
+

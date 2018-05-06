@@ -1,0 +1,323 @@
+@import "vendor/bootstrap.css";
+
+@font-face {
+  font-family: Vida;
+  src: url("font/Vida 31 Pro/vida31pro.otf");
+}
+
+@font-face {
+  font-family: Vida;
+  font-weight: bold;
+  src: url("font/Vida 33 Pro/vida33pro.otf");
+}
+
+
+
+@import "variables";
+
+@import "main";
+
+@import "media";
+
+* {
+  transition: all .3s ease-in;
+}
+
+html, body {
+  font-family: Vida;
+  overflow-x: hidden;
+}
+
+.navbar {
+  .nav-link {
+    color: $red !important;
+    font-size: 14px;
+  }
+
+  .nav-text {
+    font-weight: bold;
+    margin: 0 10px
+  }
+}
+
+
+.badge-wrapper {
+  position: relative;
+  margin: 0 15px;
+
+  .badge-top {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    display: block;
+    background-color: $red;
+    color: $white;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 50%;
+    top: -5px;
+    right: -5px;
+
+
+    &.badge-big {
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 13px;
+    }
+  }
+}
+
+
+h3 {
+  font-weight: bold;
+  color: $dark-text;
+  margin: 20px 0;
+}
+
+
+.top-image {
+  height: 200px;
+  overflow: hidden;
+
+  background-image:url('https://www.johnhartrealestate.com/blog/wp-content/uploads/2017/07/home-holiday-to-do-today-160725-tease-01_bfe2763c6779cbd2a90c21de48b07757.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  position: relative;
+
+
+  &__text {
+    bottom: 0;
+    position: absolute;
+
+
+    &--title {
+      background-color: $white;
+      color: #777b80;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 20px;
+      padding-bottom: 0 !important;
+      margin-top: -30px;
+      position: absolute;
+      display: inline-block;
+    }
+
+    &--subtitle {
+      background-color: $white;
+      color: $dark-text;
+      font-size: 26px;
+      font-weight: bold;
+      padding: 10px 20px;
+    }
+  }
+}
+
+
+.left-buttons-mobile {
+  width: 100%;
+  display: none;
+  margin-top: 10px;
+  margin-left: 0 !important;
+  
+  & > span {
+    position: relative;
+  }
+
+  .badge-top {
+    right: -20px;
+  }
+
+  &:after {
+    right: 10px;
+    position: absolute;
+  }
+}
+
+.list-group.left-buttons {
+  margin: 10px 0;
+
+  .list-group-item {
+    border: none;
+
+    & > a {
+      display: block;
+      color: $red;
+    }
+
+
+    &.active {
+      margin-left: 0px;
+      border: 1px solid $light-gray;
+      color: $dark-gray !important;
+      text-decoration: none !important;
+      padding: 7px 19px;
+      border-radius: 17px;
+      font-size: 16px;
+      background-color: transparent;
+
+      & > a {
+        color: #53565a;
+      }
+    }
+  }
+}
+
+
+
+.left-links {
+  margin: 10px 0;
+  padding: 0 20px;
+
+  .list-group-item {
+    border: none;
+    border-radius: 0;
+    border-top: 1px solid #fafafa;
+    padding: 12px 0;
+
+
+    & > a {
+      display: block;
+      color: $red;
+      text-decoration: none !important;
+
+      h5 {
+        font-weight: bold;
+        margin: 0;
+      }
+
+      small {
+        color: $dark-text;
+      }
+
+      i {
+        font-weight: bold;
+        font-size: 12px;
+        font-style: normal;
+        float: right;
+        margin-top: 5px;
+
+        &:after {
+          content: '\f35a';
+          font-family: "Font Awesome 5 Free";
+          font-weight: bold;
+          margin-left: 5px;
+          color: $red;
+        }
+      }
+    }
+
+
+    &.active {
+      margin-left: 0px;
+      border: 1px solid $light-gray;
+      color: $dark-gray !important;
+      text-decoration: none !important;
+      padding: 7px 19px;
+      border-radius: 17px;
+      font-size: 16px;
+      background-color: transparent;
+
+      & > a {
+        color: #53565a;
+      }
+    }
+  }
+}
+
+
+.gray-back {
+  background-color: #edeeee;
+
+  & > .container {
+    padding: 35px 0;
+
+    i {
+      color: #aaabab;
+      font-style: normal;
+      font-size: 14px;
+
+      span {
+        font-size: 12px;
+        background-color: $white;
+        color: $dark-text;
+        padding: 3px 10px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        position: relative;
+        font-weight: bold;
+        margin-left: 10px;
+
+        &.stock {
+          background-color: #c5e71b;
+          padding: 3px 15px;
+
+          &:after {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            top: 7px;
+            left: -8px;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 7px solid #edeeee;
+            transform: scale(0.999) rotate(90deg);
+            -webkit-backface-visibility: hidden;
+          }
+
+          &:before {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            top: 7px;
+            right: -8px;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 7px solid #edeeee;
+            transform: scale(0.999) rotate(-90deg);
+            -webkit-backface-visibility: hidden;
+          }
+        }
+
+
+      }
+    }
+  }
+}
+
+
+.bottom-block {
+  padding: 30px 0;
+  &__social {
+    a {
+      color: $red;
+      text-decoration: none !important;
+      margin-right: 10px;
+      font-size: 18px;
+    }
+
+    & + h5 {
+      font-weight: bold;
+      color: $dark-text;
+      margin: 20px 0;
+      font-size: 18px;
+    }
+  }
+
+
+
+  &__email {
+    font-size: 13px;
+    display: block;
+    color: $red !important;
+  }
+
+  &__red-link {
+    font-size: 15px;
+    color: $red !important;
+  }
+}
