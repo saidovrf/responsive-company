@@ -13,7 +13,9 @@
 <body>
 
     <nav class="navbar navbar-expand-md  navbar-light bg-white">
-        <a class="navbar-brand" href="#">Company</a>
+        <a class="navbar-brand" href="#">
+            <img src="hismith_logo.png" class="logo" alt="">
+        </a>
 
         <div class="navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
@@ -22,25 +24,6 @@
                 <li class="nav-item"><a href="#" class="nav-link">Раздел №3</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Раздел №4</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Раздел №5</a></li>
-
-                <li>
-                    <span class="badge-wrapper">
-                        <i class="fas fa-list-ul"></i>
-                        <span class="badge-top">3</span>
-                    </span>
-                </li>
-                <li>
-                    <a href="#" class="red-link">Сравнение</a>
-                </li>
-                <li>
-                    <a href="#" class="rounded-button">Личный кабинет</a>
-                </li>
-
-                <li>
-                    <span class="nav-text">+7 000 000-00-00</span>
-
-                    <span class="circle-button"><i class="fas fa-phone"></i></span>
-                </li>
             </ul>
         </div>
 
@@ -49,6 +32,17 @@
 
 
 
+        <div class="navbar__additions">
+            <span class="badge-wrapper">
+                <i class="fas fa-list-ul"></i>
+                <span class="badge-top">3</span>
+            </span>
+            <a href="#" class="red-link">Сравнение</a>
+
+            <a href="#" class="rounded-button">Личный кабинет</a>
+
+        </div>
+
 
 
 
@@ -56,8 +50,8 @@
 
         <span class="circle-button"><i class="fas fa-phone"></i></span>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" id="openModalButton">
+            <i class="fas fa-bars"></i>
         </button>
     </nav>
 
@@ -205,10 +199,11 @@
                 <small>Адрес, улица, дом, корпус</small>
                 <a href="#" class="bottom-block__email">post@comp.com</a>
             </div>
-            <div class="col-8 col-xs-12">
-                <div class="row">
+            <div class="col-8 col-xs-12 parts">
+                <div class="row parts__md">
                     <div class="col-6 col-md-2">
                         <h5>Раздел №1</h5>
+
                         <a href="#" class="bottom-block__red-link">Подраздел №1</a>
                         <a href="#" class="bottom-block__red-link">Подраздел №2</a>
                         <a href="#" class="bottom-block__red-link">Подраздел №3</a>
@@ -218,6 +213,7 @@
                     </div>
                     <div class="col-6 col-md-2">
                         <h5>Раздел №2</h5>
+
                         <a href="#" class="bottom-block__red-link">Подраздел №1</a>
                         <a href="#" class="bottom-block__red-link">Подраздел №2</a>
                         <a href="#" class="bottom-block__red-link">Подраздел №3</a>
@@ -225,6 +221,7 @@
                     </div>
                     <div class="col-6 col-md-2">
                         <h5>Раздел №3</h5>
+
                         <a href="#" class="bottom-block__red-link">Подраздел №1</a>
                         <a href="#" class="bottom-block__red-link">Подраздел №2</a>
                         <a href="#" class="bottom-block__red-link">Подраздел №3</a>
@@ -234,13 +231,92 @@
                     </div>
                     <div class="col-6 col-md-2">
                         <h5>&nbsp;</h5>
+
                         <a href="#" class="bottom-block__red-link">Подраздел №1</a>
                         <a href="#" class="bottom-block__red-link">Подраздел №2</a>
                         <a href="#" class="bottom-block__red-link">Подраздел №3</a>
                     </div>
                 </div>
+
+
+
+                <div class="row parts__xs">
+                    <div class="col-6 col-md-2">
+                        <a class="parts__button collapsed" data-toggle="collapse" href="#part1" role="button" aria-expanded="false" aria-controls="part1">Раздел №1</a>
+                        <div class="collapse parts__content" id="part1">
+                            <a href="#" class="bottom-block__red-link">Подраздел №1</a>
+                            <a href="#" class="bottom-block__red-link">Подраздел №2</a>
+                            <a href="#" class="bottom-block__red-link">Подраздел №3</a>
+                            <a href="#" class="bottom-block__red-link">Подраздел №4</a>
+                            <a href="#" class="bottom-block__red-link">Подраздел №5</a>
+                            <a href="#" class="bottom-block__red-link">Подраздел №6</a>
+                        </div>
+
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <a class="parts__button collapsed" data-toggle="collapse" href="#part2" role="button" aria-expanded="false" aria-controls="part2">Раздел №2</a>
+                        <div class="collapse parts__content" id="part2">
+                            <a href="#" class="bottom-block__red-link">Подраздел №1</a>
+                            <a href="#" class="bottom-block__red-link">Подраздел №2</a>
+                            <a href="#" class="bottom-block__red-link">Подраздел №3</a>
+                            <a href="#" class="bottom-block__red-link">Подраздел №4</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <a class="parts__button collapsed" data-toggle="collapse" href="#part3" role="button" aria-expanded="false" aria-controls="part3">Раздел №3</a>
+                        <div class="collapse parts__content" id="part3">
+                            <a href="#" class="bottom-block__red-link">Подраздел №1</a>
+                            <a href="#" class="bottom-block__red-link">Подраздел №2</a>
+                            <a href="#" class="bottom-block__red-link">Подраздел №3</a>
+                            <a href="#" class="bottom-block__red-link">Подраздел №4</a>
+                            <a href="#" class="bottom-block__red-link">Подраздел №5</a>
+                            <a href="#" class="bottom-block__red-link">Подраздел №6</a>
+
+                            <a href="#" class="bottom-block__red-link">Подраздел №1</a>
+                            <a href="#" class="bottom-block__red-link">Подраздел №2</a>
+                            <a href="#" class="bottom-block__red-link">Подраздел №3</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+        </div>
+    </div>
+
+
+    <div class="menu-modal" id="modal">
+        <div class="menu-modal__wrapper">
+
+            <a href="#" class="menu-modal__close" id="closeModalButton"><i class="fas fa-times"></i></a>
+
+            <a class="navbar-brand" href="#">
+                <img src="hismith_logo.png" class="logo" alt="">
+            </a>
+
+            <ul class="navbar-nav navigation menu-modal__nav">
+                <li class="nav-item"><a href="#" class="nav-link">Раздел №1</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Раздел №2</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Раздел №3</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Раздел №4</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Раздел №5</a></li>
+            </ul>
+            <div class="menu-modal__footer">
+
+                <div class="menu-modal__access">
+                    <div class="menu-modal__compare">
+                        <span class="badge-wrapper">
+                            <i class="fas fa-list-ul"></i>
+                            <span class="badge-top">3</span>
+                        </span>
+                        <a href="#" class="red-link">Сравнение</a>
+                    </div>
+                    <a href="#" class="red-link menu-modal__login">Личный кабинет</a>
+                </div>
+
+
+                <span class="menu-modal__phone">+7 000 000-00-00</span>
+                <span class="circle-button menu-modal__button"><i class="fas fa-phone"></i></span>
+            </div>
         </div>
     </div>
 

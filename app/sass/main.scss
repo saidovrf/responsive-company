@@ -53,9 +53,40 @@
   color: $dark-text !important;
   background-color: $accordion-active;
   margin-bottom: 25px;
+  position: relative;
+
+
+  &:after {
+    content: '\f13a';
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    transform: rotate(180deg);
+    transition: all .3s ease-in;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    color: $red;
+    background-color: transparent;
+    line-height: 16px;
+    box-shadow: 0 0 0 1px $dark-gray;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 
   &.collapsed {
     background-color: $white;
+
+    &:after {
+      color: $white;
+
+      background-color: $dark-gray;
+      transform: rotate(0deg);
+    }
   }
 
   & .accordion__head {

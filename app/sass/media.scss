@@ -54,13 +54,51 @@
 
   }
 
+
+
+  .parts {
+    &__xs {
+      display: block !important;
+    }
+
+    &__md {
+      display: none !important;
+    }
+  }
+
 }
 
 @media (max-width: 768px) {
 
+  .parts {
+    &__xs {
+      display: none;
+    }
+
+    &__md {
+      display: block;
+    }
+  }
+
+
+  .navbar__additions,
   #navbarNav {
     display: none;
   }
+
+  .navbar {
+    .nav-text {
+      position: absolute;
+      right: 110px;
+    }
+
+    .circle-button {
+      position: absolute;
+      right: 70px;
+    }
+  }
+
+
   .left-buttons-mobile {
     display: block !important;
   }
